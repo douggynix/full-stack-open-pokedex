@@ -12,7 +12,7 @@ const server = app.listen(PORT, () => {
   console.log('server started on port 5000')
 })
 
-  //eslint-disable-next-line no-console
-console.log('Adress Info',server.address());
+//eslint-disable-next-line no-console
+console.log('Adress Info',server.address())
 
 
