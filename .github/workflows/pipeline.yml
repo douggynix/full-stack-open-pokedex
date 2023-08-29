@@ -25,6 +25,7 @@ jobs:
           sleep 20
           curl -vvv http://127.0.0.1:5000
           netstat -nltp
+          npx forever list
       - name: e2e tests
         run: npm run test:e2e
 #        uses: cypress-io/github-action@v5
