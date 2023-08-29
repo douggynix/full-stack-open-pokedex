@@ -28,6 +28,11 @@ jobs:
           npx forever list
       - name: e2e tests
         run: npm run test:e2e
+      - name: Show node process logs
+        run: |
+          cat out.log
+          cat err.log
+          cat forever.log
 #        uses: cypress-io/github-action@v5
 #        with:
 #          command: npm run test:e2e
