@@ -26,13 +26,9 @@ jobs:
           curl -vvv http://127.0.0.1:5000
           netstat -nltp
           npx forever list
+          cat ~/.forever/*
       - name: e2e tests
         run: npm run test:e2e
-      - name: Show node process logs
-        run: |
-          cat out.log
-          cat err.log
-          cat forever.log
 #        uses: cypress-io/github-action@v5
 #        with:
 #          command: npm run test:e2e
