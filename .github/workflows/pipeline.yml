@@ -22,7 +22,7 @@ jobs:
         run: npm run start-prod:github
       - name: Output Home Page
         run: |
-          sleep 10
+          sleep 20
           curl -vvv http://127.0.0.1:5000
           netstat -nltp
       - name: e2e tests
